@@ -8,6 +8,7 @@ import CreateCategoriesService from './posts/services/CreateCategoriesService';
 import CreatePostService from './posts/services/CreatePostService';
 import FindAllCategoriesService from './posts/services/FindAllCategoriesService';
 import FindCategoryByTagService from './posts/services/FindCategoryByTagService';
+import FindPostByAuthorService from './posts/services/FindPostByAuthorService';
 
 @Module({
   imports: [
@@ -21,6 +22,7 @@ import FindCategoryByTagService from './posts/services/FindCategoryByTagService'
     FindAllCategoriesService,
     FindCategoryByTagService,
     CreatePostService,
+    FindPostByAuthorService,
   ],
   controllers: [CategoriesController, PostsController],
 })
